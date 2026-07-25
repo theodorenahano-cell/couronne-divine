@@ -504,10 +504,11 @@
       <div class="item"><div class="ico">☎</div><div><h4>Téléphone</h4><p>+257 XX XX XX XX</p></div></div>
       <div class="item"><div class="ico">✉</div><div><h4>Email</h4><p>contact@couronnedivine.bi</p></div></div>
     </div>
-    <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Aperçu uniquement — le formulaire sera fonctionnel dans la version complète.');">
-      <input type="text" placeholder="Nom complet" required>
-      <input type="email" placeholder="Adresse email" required>
-      <textarea placeholder="Votre message ou demande de prière" required></textarea>
+    <form class="contact-form reveal" action="https://formspree.io/f/maqrlnbb" method="POST">
+      <input type="text" name="nom" placeholder="Nom complet" required>
+      <input type="email" name="email" placeholder="Adresse email" required>
+      <textarea name="message" placeholder="Votre message ou demande de prière" required></textarea>
+      <input type="hidden" name="_subject" value="Nouvelle demande — Église Couronne Divine">
       <button type="submit">Envoyer le message</button>
     </form>
   </div>
